@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration:none;
+}
+
+#container{
+    margin: 0 auto;
+    width: 1200px;
+}
+
+/****************************************************/
+/* 헤더 영역 - 로고, 네비게이션, 오른쪽 상단 아이콘 */
+/****************************************************/
+header{
+    width: 100%;
+    height:70px;
+    background-color: rgb(255, 255, 255);
+}
+
+/*이미지 로고*/
+header>a>img{
+    float:left;
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+/*글자 로고*/
+#logo{
+    float:left;
+    width: 160px;    
+    height:70px;
+    line-height:70px;
+}
+
+#logo>a>h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight:700;
+    font-size:25px;
+    color:#222;
+}
+
+/*네비게이션*/
+nav{
+    float:left;
+    width:760px;
+    height:70px;
+}
+
+ul{
+    list-style:none;
+}
+
+#topMenu > li {
+    display: inline-block;
+    margin: 0 25px;   /*게시판 이름 사이의 간격*/
+    height: 70px;
+    line-height: 70px;  /*세로 중앙 정렬*/
+    color: rgb(0, 0, 0);  /*게시판 이름 글자 색 지정*/
+    font-family: "맑은 고딕", 돋움, tahoma;
+    font-size: 15px;
+    font-weight: bold;  /*글자 굵게*/
+    letter-spacing: -1px;
+}
+
+#topMenu > li:hover {
+    color:rgb(170, 217, 248);  /* 서브 메뉴 마우스 오버하면 색상 바뀜 */  
+}
+
+/*오른쪽 상단 이미지*/
+#sub>a>img{
+    display: inline-block;
+    margin: 0 2px;   /*게시판 이름 사이의 간격*/
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+
+
+
+/*****하단 게시판 툴*****/
+#blueBox{
+    border: 2px solid;
+    width: 85%;
+    height: 150px;
+    margin: 6% auto;
+    margin-bottom: 0;
+    margin-top: 10px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-color:rgb(170, 217, 248);
+    line-height: 140px;
+    padding-left: 5%;
+    background: rgb(170, 217, 248);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* #postform label{
+    border: 1px solid;
+    float: left;
+    font-size: 13px;
+    width: 110px;
+    height: 300px;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 5px;
+} */
+
+/* 게시판 선택 */
+#post-choice{
+    width: 300px;
+    height: 40px;
+    margin-left: 8%;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+/* 익명 선택 체크 박스 */
+.checkbox{
+    /* 체크박스 위치 내리기 */
+    margin-left: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+/* 게시판 제목 칸 */
+#post-title{
+    width: 450px;
+    height: 40px;
+    margin-left: 8%;
+    margin-top:10px;
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+/* 게시판 글쓰기 칸 */
+#post-block{
+    width: 85%;
+    height: 200px;
+    margin-left: 8%;
+    margin-top:10px;
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+/* 글 등록 버튼 */
+.submitbutton{
+    width: 80px;
+    height: 40px;
+    background-color: rgb(170, 217, 248);
+    border: rgb(170, 217, 248);
+    font-weight: bold;
+    margin-left: 45%;
+}

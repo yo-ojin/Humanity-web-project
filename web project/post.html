@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head>
+        <link href='style.css' rel='stylesheet'>
+        <meta charset = "UTF-8">
+        <title>게시글 작성하기</title>
+    </head>
+
+    <body>
+        <div id='container'>
+            <!-- 상단 메뉴(헤더)-4개로 나눔 -->
+            <header>
+                <!-- 1. 로고 이미지 부분 -->
+                <a href = "main.html">
+                    <img src = "images/logo.png" alt="휴머니티">
+                </a>
+                <!-- 2. 로고 humanity부분 -->
+                <div id = "logo">
+                    <a href = "main.html">
+                        <h2>HUMANITY</h2>
+                    </a>
+                </div>
+                <nav>
+                    <!-- 3. 게시판 이름 부분 -->
+                    <ul id="topMenu">
+                        <li>자유게시판</li>
+                        <li>공지게시판</li>
+                        <li>모집게시판</li>
+                        <li>취업 정보</li>
+                        <li>강의 후기</li>
+                        <li>중고 거래</li>
+                    </ul>
+                </nav>
+            
+                <!-- 4. 오른쪽 상단 아이콘 부분 -->
+                <div id = "sub">
+                    <a href = "search.html" class = "icon wearch">
+                        <img src = "images/search.png" alt="검색">
+                    </a>
+                    <a href = "message.html">
+                        <img src = "images/message.png" alt="쪽지">
+                    </a>
+                    <a href = "privacy_main.html">
+                        <img src = "images/privacy.png" alt="내 정보">
+                    </a>
+                </div>
+            </header>
+
+
+            
+        </div>
+
+        <div id='blueBox'>자유게시판</div>
+                <form>
+                    <div>
+                     <!-- <inpput type='text' name='post-choice' list="post-choice"> -->
+                        <select id="post-choice">
+                            <option value="option">--게시판 선택--</option>
+                            <option value="자유게시판">자유게시판</option>
+                            <option value="공지게시판">공지게시판</option>
+                            <option value="모집게시판">모집게시판</option>
+                            <option value="취업 정보">취업 정보</option>
+                            <option value="강의 후기">강의 후기</option>
+                            <option value="중고 거">중고 거래</option>
+                        </select>
+    
+                        <input type="image" name="SelectFile"/>
+                        <input class="checkbox" type="checkbox">익명</input>
+                    </div>
+               
+                    <div>
+                        <input id="post-title" type="text" placeholder="제목을 입력하세요."/>
+                    </div>
+
+                    <div>
+                        <textarea id="post-block" name="post-block" placeholder="내용을 입력하세요."></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="submitbutton">제출하기</button>
+                    </div>
+            
+                
+                </form>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+<!-- <?$board_id=$_GET['board_id'];?>
+        <div id="board_write">
+            <div id="write_area">
+                <form enctype="multipart/form-data" action="write_ok.php?board_id=<?echo $board_id;?>" method="post">
+                    <div id="in_title">
+                        <textarea name="title" id="utitle" rows="1" cols="55" placeholder="제목을 입력하세요." maxlength="100" required></textarea>
+                    </div>
+ 
+                    <div class="wi_line"></div>
+                    <div id="in_content">
+                        <textarea name="content" id="ucontent" placeholder="내용을 입력하세요." required></textarea>
+                    </div>
+ 
+                      <input type="file" name="SelectFile" />
+ 
+ 
+                    <div class="bt_se">
+                        <button type="submit">글 작성</button>
+                    </div>
+                </form>
+            </div>
+        </div> -->
+
+
+<!-- <form action="writerAction" method="post">
+            <input type="hidden" name="bdGroup" value=<%=bdGroup%>>
+            <input type="hidden" name="bdOrder" value=<%=bdOrder%>>
+            <input type="hidden" name="bdIndent" value=<%=bdIndent%>>
+            <input type="text" name="bdTitle" class="form-control mt-4 mb-2"
+                placeholder="제목을 입력해주세요." required
+            >
+            <div class="form-group">
+                <textarea class="form-control" rows="10" name="bdContent"
+                    placeholder="내용을 입력해주세요" required
+                ></textarea>
+            </div>
+            <button type="submit" class="btn btn-secondary mb-3">제출하기</button>
+        </form> -->
